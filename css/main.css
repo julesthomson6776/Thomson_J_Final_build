@@ -88,11 +88,11 @@
   }
   
   #chicken {background-position: 10px 0;}
-  #carol { background-position: -125px 0; }
-  #clint { background-position: -285px 0; }
-  #hulk { background-position: -445px 0; }
-  #thor { background-position: -600px 0; }
-  #widow { background-position: -750px 0; }
+  #cow { background-position: -125px 0; }
+  #pig { background-position: -285px 0; }
+  #sheep { background-position: -445px 0; }
+  #donkey { background-position: -600px 0; }
+  #goat { background-position: -750px 0; }
   
   .sprite:hover { background-position-y: -150px !important; }
   
@@ -122,15 +122,19 @@
     left: 0;
   
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/Cap_LB_Bg.png');
+    background-image: url('../img/chicken.jpg');
     background-repeat: no-repeat;
   
     background-size: 55vh; /* 55% of the viewport height */
-    background-position: 40px bottom;
+    background-position:  100px bottom;
   
     display: none;
+
+    
+
   }
   
+
   #lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
   
   .lightbox_close {
@@ -146,7 +150,7 @@
     font-weight: bolder;
   }
   
-  .lightbox_close:hover { opacity: 0.5; color: blue; }
+  .lightbox_close:hover { opacity: 0.5; color: white; }
   
   .lightbox article {
     width: 55%;
@@ -161,6 +165,128 @@
     margin-left: 0;
     padding-top: 2em;
   }
+
+
+.lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../img/chicken.jpg');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+#lightbox2 { background-image: url('../img/cow.jpg'); }
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+    opacity: 5;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+    background-position: 40px bottom;
+}
+#lightbox3 {background-image: url('../img/pig.jpg');}
+.lightbox3 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color:   lightblue;
+    background-image: url('../img/pig.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+#lightbox4 {background-image: url('../img/sheep.jpg');}
+
+.lightbox4 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: lightblue;
+    background-image: url('../img/sheep.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+
+#lightbox5 {background-image: url('../img/donkey.jpg');}
+
+.lightbox5 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: lightblue;
+    background-image: url('../img/donkey.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+
+#lightbox6 {background-image: url('../img/goat.jpg');}
+
+.lightbox6 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color:   lightblue;
+    background-image: url('../img/goat.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+
+
+ 
   
   /* turn the lightbox on using the :target pseudo selector */
   .lightbox:target { display: block; }
