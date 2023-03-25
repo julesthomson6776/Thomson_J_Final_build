@@ -1,0 +1,292 @@
+/* these all apply to the body element -> global rules */
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+  }
+  
+  .hidden { display: none; }
+  
+  html, body { height: 100% }
+  
+  body { 
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  
+  background-image: url("../img/background\ 1.49.52\ PM.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: center;
+  }
+  
+  /* main header rules */
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: end;
+  }
+  
+  #main-logo { width: 220px; padding: 10px 20px; margin-left: auto;}
+  
+  /* main rules here */
+  #character-nav { margin-left: 30%; max-width: 60%; }
+  
+  .characters { list-style-type: none; }
+  
+  .characters li { 
+    display: inline-block;
+    height: 220px;
+    margin: 10px 8px;
+  
+    background-color: black;
+  
+    text-align: left;
+  
+    cursor: pointer;
+  }
+  
+  .characters li h5 {
+    color: white;
+    padding: 12px 8px;
+  }
+  
+  .characters li a { text-decoration: none; }
+  
+  .red_bumper {
+    width: 100%;
+    height: 6px;
+    background-color: lightblue;
+  }
+  
+  article { 
+    padding: 20px;
+    margin-left: 30%;
+  }
+  
+  /* select the h3 tag inside the article tag on the page */
+  /* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
+  article h3  {
+    font-size: 2.5em;
+    margin-bottom: 14px;
+  }
+  
+  /* select the p tag inside the article tag on the page */
+  article p {
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+  
+  .sprite {
+    width: 150px;
+    height: 150px;
+    
+    background-image: url('../img/haydaysprites.jpg');
+  }
+  
+  #chicken {background-position: 10px 0;}
+  #cow { background-position: -125px 0; }
+  #pig { background-position: -285px 0; }
+  #sheep { background-position: -445px 0; }
+  #donkey { background-position: -600px 0; }
+  #goat { background-position: -750px 0; }
+  
+  .sprite:hover { background-position-y: -150px !important; }
+  
+  /* footer rules here */
+  footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .sticky_footer {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+  
+    background-color: green;
+  }
+  
+  /* lightbox rules here */
+  
+  .lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../img/chicken.jpg');
+    background-repeat: no-repeat;
+  
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position:  100px bottom;
+  
+    display: none;
+
+    
+
+  }
+  
+
+  #lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+  
+  .lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+  
+    color: white;
+    font-size: 3em;
+  
+    text-decoration: none;
+  
+    font-weight: bolder;
+  }
+  
+  .lightbox_close:hover { opacity: 0.5; color: white; }
+  
+  .lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+  }
+  
+  .lb_text, .lb_heading { text-align: left; }
+  
+  .lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+  }
+
+
+.lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../img/chicken.jpg');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+#lightbox2 { background-image: url('../img/cow.jpg'); }
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+    opacity: 5;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+    background-position: 40px bottom;
+}
+#lightbox3 {background-image: url('../img/pig.jpg');}
+.lightbox3 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color:   lightblue;
+    background-image: url('../img/pig.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+#lightbox4 {background-image: url('../img/sheep.jpg');}
+
+.lightbox4 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: lightblue;
+    background-image: url('../img/sheep.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+
+#lightbox5 {background-image: url('../img/donkey.jpg');}
+
+.lightbox5 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: lightblue;
+    background-image: url('../img/donkey.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+
+#lightbox6 {background-image: url('../img/goat.jpg');}
+
+.lightbox6 {
+    width: 100vw; 
+    height: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color:   lightblue;
+    background-image: url('../img/goat.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 50px bottom;
+    background-position: 70px top ;
+    z-index: 5000;
+    display: none;
+}
+
+
+ 
+  
+  /* turn the lightbox on using the :target pseudo selector */
+  .lightbox:target { display: block; }
